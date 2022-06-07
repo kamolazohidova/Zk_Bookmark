@@ -329,6 +329,7 @@ select:-webkit-autofill:focus {
 
 /* ACCORDION  */
 .accordion {
+    width: 540px;
     border-top: 1px solid rgba(36, 42, 69, 0.15);
 }
 
@@ -774,7 +775,10 @@ select:-webkit-autofill:focus {
     text-align: left;
 }
 
+
 .subscription__input:not(:focus):not(:placeholder-shown):invalid {
+    display: block;
+    border: 3px solid red;
     padding-right: 52px;
     border-color: var(--red);
     background-image: url(../img/error-disc.svg);
@@ -782,7 +786,7 @@ select:-webkit-autofill:focus {
     background-position: right 16px center;
 }
 
-.subscription__input:not(:focus):not(:placeholder-shown):invalid~.subscription-error {
+.subscription__input:not(:focus):not(:placeholder-shown):invalid~.subscription__error {
     display: block;
 }
 
