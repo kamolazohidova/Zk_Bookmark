@@ -457,13 +457,14 @@ select:-webkit-autofill:focus {
 }
 
 .site-header__logo {
-    margin-right: auto;
+    margin-right: 20px;
 }
 
 
 /* LOGO  */
 .logo {
     display: block;
+    margin-right: auto;
 }
 
 .logo:hover {
@@ -484,7 +485,7 @@ select:-webkit-autofill:focus {
 
 /* NAVBAR  */
 .site-header__sitenav {
-    margin-right: 48px;
+    margin-right: 20px;
 }
 
 .sitenav {
