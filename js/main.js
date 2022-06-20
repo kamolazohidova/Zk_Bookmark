@@ -25,7 +25,7 @@ function deactivateTabPanels () {
 
 function closeAccordionItems () {
     elsAccordionItem.forEach(function(elAccordionItem) {
-        elAccordionItem.classList.remove(modifiers.accordionItemOpen)
+        // elAccordionItem.classList.remove(modifiers.accordionItemOpen)
     });
 }
 
@@ -54,6 +54,6 @@ elsAccordionItemToggler.forEach(function (elAccordionItemToggler) {
     elAccordionItemToggler.addEventListener('click', function () {
         closeAccordionItems();
 
-        elAccordionItemToggler.closest('.accordion__item').classList.add(modifiers.accordionItemOpen)
+        elAccordionItemToggler.closest('.accordion__item').classList.toggle(modifiers.accordionItemOpen)
     });
 });
